@@ -1,0 +1,140 @@
+/************** MIXINS **************/
+
+/************** END MIXINS **************/
+
+/************** MOBILE **************/
+body{
+	background:rgba(89, 255, 215, 1);
+}
+.fvh{
+	min-height: 100vh;
+}
+.text-shadow{
+	text-shadow: 0 0 10px #000,
+							 0 0 5px #000,
+							 0 0 15px #000;
+	@media (min-width: 768px){
+		text-shadow: none;
+	}
+}
+.divide-line{
+	border-bottom: 3px solid rgba(255,255,255,.3);
+	border-radius: 1.5px;
+}
+.text-transparent{
+	color: rgba(255,255,255,.5);
+}
+.transparent{
+	background: rgba(255,255,255,0);
+}
+.navbar-nav{
+	box-shadow: 0 3px 5px rgba(0,0,0,.6);
+	background: rgba(0,0,0,.8);
+	background: linear-gradient(-90deg, rgba(0,0,0,.8), rgba(0,0,0,.5));
+	border-radius: 8px;
+	border: 1px solid rgba(255,255,255,.5);
+}
+.nav-item:nth-child(2){
+	border-right: 2px solid rgba(255,255,255,.4);
+	border-left: 2px solid rgba(255,255,255,.4);
+}
+.bg-pic{
+	z-index: -5;
+	background: url('../images/pic-5.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.bg-mp4{
+	z-index: -4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	min-height: 100vh;
+	height: 100%;
+	object-fit: cover;
+}
+.video-container{
+	position: relative;
+	height: 100%;
+}
+.intro-div{
+	background:rgba(20,20,20,0.7);
+	box-shadow: 0 0 10px #000;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 8px;
+}
+p{
+	text-shadow: 0 0 10px #000;
+}
+.hvh{
+	height: 50vh;
+  min-height: 20em;
+}
+.intro-works{
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,.2);
+	box-shadow: 0 0 10px #000;
+}
+.projects{
+	background: rgba(0,0,0,.7);
+	z-index: 1;
+	position: relative;
+	img{
+		z-index: -2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	h1{
+		z-index: 0;
+		text-shadow: 0 0 10px #000;
+		background: rgba(0,0,0,1);
+	}
+}
+/************** END MOBILE **************/
+
+
+/************** DESKTOP **************/
+@media (min-width:768px){
+	::-webkit-scrollbar {
+    display: none;
+}
+	.intro-div{
+		background:rgba(20,20,20,0.7);
+		margin-top: 0em;
+	}
+	.hvh{
+		height: 40vh;
+    min-height: 20em;
+	}
+	.bg-pic{
+		background: url('../images/gif-7.gif');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.projects{
+		border: 1px solid rgba(255,255,255,.2);
+		z-index: 0;
+		h1{
+			text-shadow: 0 0 10px #000;
+			z-index: 100;
+		}
+		img{
+			transition: filter .5s;
+			&:hover{
+				cursor: pointer;
+				filter: grayscale(0);
+			}
+			filter: grayscale(.8);
+			z-index: -1;
+			object-fit: cover;
+		}
+	}
+}
+/************** END DESKTOP **************/
