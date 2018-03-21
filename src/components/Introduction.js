@@ -1,8 +1,4 @@
 import React from 'react';
-import bg_desk from '../images/mp4gif.mp4';
-import bg_desk2 from '../images/mp4gif2.mp4';
-import webm_desk from '../images/webmgif.webm';
-import webm_desk2 from '../images/webmgif2.webm';
 const Intro = (props) => {
   return(
     <div className="container intro-div d-flex flex-column justify-content-center text-light h-100">

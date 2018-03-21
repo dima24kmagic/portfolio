@@ -8,10 +8,6 @@ import {
 import logo from '../logo.svg';
 import '../css/bootstrap.min.css'
 import '../css/index.css';
-import bg_desk from '../images/mp4gif.mp4';
-import bg_desk2 from '../images/mp4gif2.mp4';
-import webm_desk from '../images/webmgif.webm';
-import webm_desk2 from '../images/webmgif2.webm';
 //components
 import Intro from './Introduction';
 import Projects from './Projects';

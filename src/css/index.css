@@ -36,9 +36,9 @@ body {
 
 .bg-pic {
   z-index: -5;
-  background: url("../images/pic-5.jpg");
+  background: url("https://i.pinimg.com/564x/1b/08/24/1b08240476ce18eb61f3d60b1913e069.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: bottom; }
 
 .bg-mp4 {
   z-index: -4;
@@ -74,9 +74,12 @@ p {
   box-shadow: 0 0 10px #000; }
 
 .projects {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.69);
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
   position: relative; }
+  .projects:nth-last-child(1) {
+    border-bottom: none; }
   .projects img {
     z-index: -2;
     position: absolute;
